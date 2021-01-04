@@ -130,10 +130,11 @@ Once the setup of the two parts is done we will proceed with the final testing a
 
 ## Address informations
 
-DEVICE	NETWORK	  NETMASK 	      BROADCAST	  HOSTS	  HOST MIN    HOST MAX
-Host a	10.1.0.0	255.255.255.0	  10.1.0.255	254	    10.1.0.1	  10.1.0.254
-Host b	10.2.0.0	255.255.255.0	  10.2.0.255	254	    10.2.0.1	  10.2.0.254
-Host c	10.3.0.0	255.255.254.0	  10.3.1.255	510  	  10.3.0.1	  10.3.1.254
+| Device       | Network    | Netmask         | Broadcast   | Hosts | Host-min    | Host-max   |
+|--------------|------------|-----------------|-------------|-------|-------------|------------|
+| Host-a       | 10.1.0.0   | 255.255.255.0   | 10.1.0.255  | 254   | 10.1.0.1 	  | 10.1.0.254 |
+| Host-b       | 10.2.0.0   | 255.255.255.0   | 10.2.0.255  | 254   | 10.2.0.1    | 10.2.0.254 |
+| Host-c       | 10.3.0.0   | 255.255.254.0   | 10.3.0.255  | 510   | 10.3.0.1    | 10.3.1.254 |
 
 
 To assign IP addresses to the VMs I had to follow this requirements, that say: 
