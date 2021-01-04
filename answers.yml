@@ -1,0 +1,18 @@
+FirstName: Marco
+LastName: Cestari
+MatriculationNumber: 205306
+AcademicYear: 2020-2021
+GitHubUrl: www
+Subnets:
+  HostsA:
+    RequiredAddresses: 209
+    SubnetAddress: 10.1.0.0
+    SubnetPrefixLength: 24
+  HostsB:
+    RequiredAddresses: 239
+    SubnetAddress: 10.2.0.0
+    SubnetPrefixLength: 24
+  Hub:
+    RequiredAddresses: 418
+    SubnetAddress: 10.3.0.0
+    SubnetPrefixLength: 23
