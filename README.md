@@ -170,13 +170,18 @@ We used ping commands to check all the routes; and "curl 10.3.0.1:80" to test th
 To run the infrastructure use: "vagrant up".
 Verify that all virtual machines are running correctly and are "running": “Vagrant status”
 
-Check if host-a can reach host-b: “vagrant ssh host-a -c "ping 10.2.0.2 -c 1"”
-Check if host-a can reach host-c: “vagrant ssh host-a -c "ping 10.3.0.2 -c 1"”
-Check if host-b can reach host-a: “vagrant ssh host-b -c "ping 10.1.0.2 -c 1"”
-Check if host-b can reach host-c: “vagrant ssh host-b -c "ping 10.3.0.2 -c 1"”
-Check if host-c can reach host-a: “vagrant ssh host-c -c "ping 10.1.0.2 -c 1"”
-Check if host-c can reach host-b: “vagrant ssh host-c -c "ping 10.2.0.2 -c 1"”
+| Description - Ping                                              | Command                                        |
+|-----------------------------------------------------------------|------------------------------------------------|
+| Check if host-a can reach host-b                                | vagrant ssh host-a -c "ping 10.2.0.2 -c 1"     |
+| Check if host-a can reach host-c                                | vagrant ssh host-a -c "ping 10.3.0.2 -c 1"     |
+| Check if host-b can reach host-a                                | vagrant ssh host-b -c "ping 10.1.0.2 -c 1"     |
+| Check if host-b can reach host-c                                | vagrant ssh host-b -c "ping 10.3.0.2 -c 1"     |
+| Check if host-c can reach host-a                                | vagrant ssh host-c -c "ping 10.1.0.2 -c 1"     |
+| Check if host-c can reach host-b                                | vagrant ssh host-c -c "ping 10.2.0.2 -c 1"     |
 
-Check if host-a can reach the webserver of host-c: “vagrant ssh host-a -c "curl 10.3.0.2 -c 1"”
-Check if host-b can reach the webserver of host-c: “vagrant ssh host-b -c "curl 10.3.0.2 -c 1"”
-Check if the host-c can reach the webserver of the host-c: “vagrant ssh host-c -c "curl 10.3.0.2 -c 1"”
+| Description - Verify Webserver                                  | Command                                        |
+|-----------------------------------------------------------------|------------------------------------------------|
+| Check if host-a can reach the webserver of host-c               | vagrant ssh host-a -c "curl 10.3.0.2 -c 1"     |
+| Check if host-b can reach the webserver of host-c               | vagrant ssh host-b -c "curl 10.3.0.2 -c 1"     |
+| Check if the host-c can reach the webserver of the host-c       | vagrant ssh host-c -c "curl 10.3.0.2 -c 1"     |
+
